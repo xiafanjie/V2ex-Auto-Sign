@@ -62,19 +62,39 @@ function balance() {
     resolve()
   })
 }
+function qmsg(msg) {
+  return new Promise(async resolve => {
+    try {
+      let url = `${qmsgapi)}?msg=${encodeURI(msg)}`
+  let res = await axios.get(url)
+  if (res.data.code == 0) {
+    console.log('Qmsg酱：发送成功')
+  } else {
+    console.log('Qmsg酱：发送失败!' + res.data.reason)
+  }
+    } catch (err) {
+      console.log(err)
+    }
+    resolve()
+  })
+}
+
+
+
 
 function sign() {
   return new Promise(async resolve => {
     try {
     if(!cookie){
     console.log("你的cookie呢！！！")
+    qmsg("你的cookie呢！！！")
     return}
     await check()    
     if(once){
     await daily()
     }
     await balance()
-    console.log(notice)
+    qmsg(notice)
     } catch (err) {     
       console.log(err)
     }
