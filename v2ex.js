@@ -10,7 +10,6 @@ const header = {
     "user-agent":"Mozilla/5.0 (Linux; Android 10; Redmi K30) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.83 Mobile Safari/537.36",
     cookie: `'${cookie}'` }
 }
-console.log(header)
 function check() {
   return new Promise(async resolve => {
     try {
@@ -47,7 +46,7 @@ function daily() {
 }
 
 
-
+//查询余额
 function balance() {
   return new Promise(async resolve => {
     try {
@@ -62,6 +61,7 @@ function balance() {
     resolve()
   })
 }
+//推送结果
 function qmsg(msg) {
   return new Promise(async resolve => {
     try {
