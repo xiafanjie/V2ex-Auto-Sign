@@ -65,7 +65,7 @@ function balance() {
 function qmsg(msg) {
   return new Promise(async resolve => {
     try {
-      let url = `${qmsgapi)}?msg=${encodeURI(msg)}`
+      let url = `${qmsgapi}?msg=${encodeURI(msg)}`
   let res = await axios.get(url)
   if (res.data.code == 0) {
     console.log('Qmsg酱：发送成功')
@@ -94,7 +94,7 @@ function sign() {
     await daily()
     }
     await balance()
-    qmsg(notice)
+    await qmsg(notice)
     } catch (err) {     
       console.log(err)
     }
