@@ -223,7 +223,7 @@ function sign() {
             }
 
            console.log(notice)
-fs.writeFile('./signresult.txt', notice)+`
+fs.writeFile('./signresult.txt', notice+`
 `,{'flag':'a'}, err=>{
             if(err){
                 throw err
