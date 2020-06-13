@@ -221,7 +221,15 @@ function sign() {
 
             }
 
-            console.log(notice)
+           console.log(notice)
+fs.writeFile('./signresult.txt', notice)+`
+`,{'flag':'a'}, err=>{
+            if(err){
+                throw err
+            }else{
+                console.log("success")
+            }
+        })
 
             await qmsg(notice)
 
