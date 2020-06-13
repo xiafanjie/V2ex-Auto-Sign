@@ -1,5 +1,6 @@
 const axios = require('axios')
 const cookie = process.env.V2EXCK
+const fs = require("fs")
 const qmsgapi = process.env.QMSGAPI
 once = null
 ckstatus = 1
