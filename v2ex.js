@@ -115,20 +115,17 @@ function sign() {
             if (ckstatus == 1 ) {
                 if (once&& signstatus==0) {
                     await daily();
-                    if (signstatus==0) {
-                       for(i=0;i<3;i++)
-                       {
-                     //如果签到失败，循环三次不行拉倒
+                    if (signstatus==0) {                           
+                     //如果签到失败
                        await check();
-                       await daily();
-                       }
+                       await daily();             
                     }
                 }
                 await balance();            
             } else {}
           
             console.log(notice);
-            fs.writeFile("./signresult.txt",notice +  ``, {flag: "a", },
+            fs.writeFile("./signresult.txt",notice +  `\n`, {flag: "a", },
                 (err) => {
                     if (err) {
                         throw err;
