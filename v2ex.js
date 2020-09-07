@@ -202,7 +202,7 @@ function server(msg) {
 
   let url = `https://sc.ftqq.com/${sckey}.send`
 
-  let res = await axios.post(url, `text=v2ex签到&desp=${b}`)
+  let res = await axios.post(url, `text=v2ex签到(づ ●─● )づ${msg}&desp=${msg}`)
 
   if (res.data.errmsg == 'success') {
 
