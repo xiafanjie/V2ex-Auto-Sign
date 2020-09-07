@@ -1,12 +1,10 @@
 <p align="center">
-
-    <a href="https://github.com/Wenmoux"><img alt="Author" src="https://img.shields.io/badge/author-ZainCheung-blueviolet"/></a>
-
+    <a href="https://github.com/Wenmoux"><img alt="Author" src="https://img.shields.io/badge/author-Wenmoux-blueviolet"/></a>
     <img alt="PHP" src="https://img.shields.io/badge/code-javascript-success"/>
-
     <img src="https://github-visitor-badge.glitch.me/badge?page_id=Wenmoux.V2ex-Auto-Sign"/>
-
 </p>
+
+
 
 # 说在前边
  > [Github Actions入门教程](http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)
