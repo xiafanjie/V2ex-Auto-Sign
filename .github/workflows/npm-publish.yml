@@ -25,6 +25,7 @@ jobs:
               env:
                 V2EXCK: ${{ secrets.V2EXCK }}
                 QMSGAPI: ${{ secrets.QMSGAPI }}
+                sckey: ${{ secrets.sckey }}
             - name: Upload to this repo
               run: |
                 git config --global user.name "wenmoux"
