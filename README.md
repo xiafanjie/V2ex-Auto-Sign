@@ -4,7 +4,7 @@
     <img src="https://github-visitor-badge.glitch.me/badge?page_id=Wenmoux.V2ex-Auto-Sign"/>
 </p>
 
-
+# <font color="red">遇到签到失败就去v2ex退出账号并重新登陆再抓取ck,并更新cookie！！！</font>
 
 # 说在前边
  > [Github Actions入门教程](http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)
