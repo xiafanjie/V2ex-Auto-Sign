@@ -31,7 +31,7 @@ Name 是QMSGAPI value是你的api
 ## Step 3 启用Actions
 点击Action，再点击**I understand my workflows, go ahead and enable them**  
 ![](https://cdn.jsdelivr.net/gh/Wenmoux/wenpic/687474703a2f2f74752e79616f68756f2e6d652f696d67732f323032302f30362f333463613136306339373262393932372e706e67.png)
-## Step 4 运行结果
+## Step 4 运行结果 
 点击Actions-v2ex-auto-sign-build查看
 ![](https://cdn.jsdelivr.net/gh/Wenmoux/wenpic/7c27953002262d15.png)
 ![](https://cdn.jsdelivr.net/gh/Wenmoux/wenpic/IMG_20200608_091224.jpg)
