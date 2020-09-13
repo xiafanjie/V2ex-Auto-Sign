@@ -24,7 +24,7 @@ fork完之后,如图点击<font color="red">Settings</font>
 进去之后依次点击<font color="red">Secrets----new secret</font>
 点击之后
 Name输入V2EXCK value输入你的v2ex cookie
-完成后点击add secret
+完成后点击add secret 
 同理再添加一个qmagapi [获取地址](https://qmsg.zendee.cn)以及sckey(server酱)
 Name 是QMSGAPI value是你的api
 ![](https://cdn.jsdelivr.net/gh/Wenmoux/wenpic/IMG_20200629_092046.jpg)
