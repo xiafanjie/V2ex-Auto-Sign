@@ -230,6 +230,41 @@ function server(msg) {
 
 }
 
+
+function tgbot(msg) {
+ 
+    return new Promise(async (resolve) => {
+ 
+        try {
+ 
+            let url = `${tgapi}&text=${encodeURI(msg)}`;
+ 
+            let res = await axios.get(url);
+ 
+            if (res.data.ok) {
+ 
+                console.log("Tg：发送成功");
+ 
+            } else {
+ 
+                console.log("Tg：发送失败!" );
+                console.log(res.data);
+ 
+            }
+ 
+        } catch (err) {
+ 
+            console.log(err);
+ 
+        }
+ 
+        resolve();
+ 
+    });
+ 
+}
+ 
+
 function sign() {
 
     return new Promise(async (resolve) => {
@@ -295,6 +330,7 @@ function sign() {
             await qmsg(notice);
 
             await server(notice)
+            await tgbot(notice)
 
         } catch (err) {
 
