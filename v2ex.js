@@ -7,6 +7,7 @@ const fs = require("fs");
 const qmsgapi = process.env.QMSGAPI;
 
 const sckey = process.env.sckey;
+const tgapi = process.env.tgapi;
 
 once = null;
 
@@ -231,6 +232,7 @@ function server(msg) {
 }
 
 
+//@Windyskr  https://github.com/Windyskr/V2ex-Auto-Sign
 function tgbot(msg) {
  
     return new Promise(async (resolve) => {
