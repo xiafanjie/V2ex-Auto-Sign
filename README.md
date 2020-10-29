@@ -27,6 +27,7 @@ Name输入V2EXCK value输入你的v2ex cookie
 完成后点击add secret 
 同理再添加一个qmagapi [获取地址](https://qmsg.zendee.cn)以及sckey(server酱)
 Name 是QMSGAPI value是你的api
+如果想使用TGbot推送(by @Windyskr )，请添加TGAPI 需要从 @botfather 获取token，和@WooMaiBot 发送/id 获取自己id 通过拼接获取API 举例如下 https://api.telegram.org/bot123456:ABCDEFG（替换为你的token）/sendMessage?chat_id=123456（替换为你的id） 把上面这段全部填入即可
 ![](https://cdn.jsdelivr.net/gh/Wenmoux/wenpic/IMG_20200629_092046.jpg)
 ![](https://cdn.jsdelivr.net/gh/Wenmoux/wenpic/IMG_20200629_092209.jpg)
 ## Step 3 启用Actions
