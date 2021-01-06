@@ -7,6 +7,7 @@
 # <font color="red">遇到签到失败就去v2ex退出账号并重新登陆再抓取ck,并更新cookie！！！</font>
 
 # [每日签到奖励详情](./balance.md)
+# [每日签到结果](./result.md)
 
 # 说在前边
  > [Github Actions入门教程](http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)
