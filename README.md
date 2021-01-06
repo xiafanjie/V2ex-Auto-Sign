@@ -29,13 +29,19 @@
 fork完之后,如图点击<font color="red">Settings</font>
 ![](https://cdn.jsdelivr.net/gh/Wenmoux/wenpic/IMG_20200608_085340.jpg)
 
+
 进去之后依次点击<font color="red">Secrets----new secret</font>
 点击之后
 Name输入V2EXCK value输入你的v2ex cookie
 完成后点击add secret 
+
+
 同理再添加一个qmagapi [获取地址](https://qmsg.zendee.cn)以及sckey(server酱)
 Name 是QMSGAPI value是你的api
-如果想使用TGbot推送(by @Windyskr )，请添加TGAPI 需要从 @botfather 获取token，和@WooMaiBot 发送/id 获取自己id 通过拼接获取API 举例如下 https://api.telegram.org/bot123456:ABCDEFG（替换为你的token）/sendMessage?chat_id=123456（替换为你的id） 把上面这段全部填入即可
+
+
+如果想使用TGbot推送(by @Windyskr )，请添加tgapi
+ 需要从 @botfather 获取token，和@WooMaiBot 发送/id 获取自己id 通过拼接获取API 举例如下 https://api.telegram.org/bot123456:ABCDEFG（替换为你的token）/sendMessage?chat_id=123456（替换为你的id） 把上面这段全部填入即可
 ![](https://cdn.jsdelivr.net/gh/Wenmoux/wenpic/IMG_20200629_092046.jpg)
 ![](https://cdn.jsdelivr.net/gh/Wenmoux/wenpic/IMG_20200629_092209.jpg)
 
@@ -59,3 +65,11 @@ Name 是QMSGAPI value是你的api
  - 可以自己改定时时间
  - 还没想到 
 
+## 需要设置的secrets
+
+
+| name |  value | 备注 | 
+|:----:|:----:|:----:|
+| V2EXCK | 全部cookies | 必须 |
+| QMSGAPI | qmsg酱的推送api | 非必须 |
+| TGAPI | 参考操作步骤step 2 | 非必须 |
