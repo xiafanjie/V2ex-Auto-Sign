@@ -146,7 +146,7 @@ function tgbot(msg) {
             console.log(err);
         }
         resolve();
-       });
+    });
 }
 
 
@@ -160,35 +160,45 @@ function sign() {
                 return;
             }
             await check();
-            if (ckstatus == 1) {
-                if (once && signstatus == 0) {
-                    await daily();
-                    await balance();
-                    if (signstatus == 0) {
-                        console.log("签到失败")
-                    } else if (signstatus == 1 && result_md != "") {
-                        fs.writeFile("./balance.md", result_md + `\n`, {
-                                flag: "a",
-                            },
-                            (err) => {
-                                if (err) {
-                                    throw err;
-                                } else {
-                                    console.log("success");
-                                }
+            if (once && signstatus == 0) {
+                await daily();
+                await balance();
+                if (signstatus == 0) {
+                    console.log("签到失败")
+                } else if (signstatus == 1 && result_md != "") {
+                    fs.writeFile("./balance.md", result_md + `\n`, {
+                            flag: "a",
+                        },
+                        (err) => {
+                            if (err) {
+                                throw err;
+                            } else {
+                                console.log("success");
                             }
-                        );
+                        }
+                    );
+
+                }
+            }
+            fs.writeFile("./result.md", notice + `\n`, {
+                    flag: "a",
+                },
+                (err) => {
+                    if (err) {
+                        throw err;
+                    } else {
+                        console.log("success");
                     }
                 }
-            } else {}
-            console.log(notice);            
+            );
+            console.log(notice);
             await qmsg(notice);
             await server(notice)
             await tgbot(notice)
         } catch (err) {
             console.log(err);
         }
-            resolve();
+        resolve();
     });
 }
 
